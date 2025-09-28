@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - TravelEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">Travel<span>Ease</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-login" onclick="openLogin()">Login</button>
+                    <button class="btn btn-signup" onclick="openSignup()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Travel Packages</h1>
+            <p>Choose from our carefully crafted travel packages designed to suit every type of traveler.</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <h2 class="section-title">Featured Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-badge">Most Popular</div>
+                    <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Romantic Getaway" class="package-img">
+                    <div class="package-info">
+                        <h3>Romantic Getaway</h3>
+                        <p class="package-duration">7 Days / 6 Nights</p>
+                        <p class="package-description">Perfect for couples looking for a romantic escape with luxury accommodations and private experiences.</p>
+                        <div class="package-features">
+                            <span>🏨 Luxury Hotel</span>
+                            <span>💝 Romantic Dinner</span>
+                            <span>🚗 Private Transfers</span>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">$1,599</span>
+                            <span class="old-price">$1,899</span>
+                            <button class="btn-book" onclick="bookPackage('Romantic Getaway')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-badge">Family Favorite</div>
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Family Adventure" class="package-img">
+                    <div class="package-info">
+                        <h3>Family Adventure</h3>
+                        <p class="package-duration">10 Days / 9 Nights</p>
+                        <p class="package-description">Fun-filled package with activities for all ages, kid-friendly hotels and educational experiences.</p>
+                        <div class="package-features">
+                            <span>👨‍👩‍👧‍👦 Family Rooms</span>
+                            <span>🎯 Kids Activities</span>
+                            <span>🎢 Theme Parks</span>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">$2,299</span>
+                            <span class="old-price">$2,599</span>
+                            <button class="btn-book" onclick="bookPackage('Family Adventure')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-badge">Adventure</div>
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Adventure Seeker" class="package-img">
+                    <div class="package-info">
+                        <h3>Adventure Seeker</h3>
+                        <p class="package-duration">14 Days / 13 Nights</p>
+                        <p class="package-description">For thrill-seekers who want to explore nature, hike mountains, and experience adrenaline-pumping activities.</p>
+                        <div class="package-features">
+                            <span>⛰️ Mountain Trekking</span>
+                            <span>🚣 River Rafting</span>
+                            <span>🏕️ Camping</span>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">$1,899</span>
+                            <span class="old-price">$2,199</span>
+                            <button class="btn-book" onclick="bookPackage('Adventure Seeker')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TravelEase</h3>
+                    <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#" onclick="openSocial('facebook')">FB</a>
+                        <a href="#" onclick="openSocial('twitter')">TW</a>
+                        <a href="#" onclick="openSocial('instagram')">IG</a>
+                        <a href="#" onclick="openSocial('youtube')">YT</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#" onclick="openFAQ()">FAQ</a></li>
+                        <li><a href="#" onclick="openConditions()">Booking Conditions</a></li>
+                        <li><a href="#" onclick="openPrivacy()">Privacy Policy</a></li>
+                        <li><a href="#" onclick="openTerms()">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@travelease.com</li>
+                        <li>📍 123 Travel Street, Adventure City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TravelEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLogin() {
+            alert('Login form will open here!');
+        }
+
+        function openSignup() {
+            alert('Sign up form will open here!');
+        }
+
+        function bookPackage(packageName) {
+            alert(`Booking ${packageName} package!`);
+        }
+
+        function openSocial(platform) {
+            alert(`Opening our ${platform} page!`);
+        }
+
+        function openFAQ() {
+            alert('Opening FAQ page!');
+        }
+
+        function openConditions() {
+            alert('Opening Booking Conditions!');
+        }
+
+        function openPrivacy() {
+            alert('Opening Privacy Policy!');
+        }
+
+        function openTerms() {
+            alert('Opening Terms & Conditions!');
+        }
+    </script>
+</body>
+</html>

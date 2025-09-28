@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEase - Your Perfect Getaway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">Travel<span>Ease</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-login" onclick="openLogin()">Login</button>
+                    <button class="btn btn-signup" onclick="openSignup()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Discover Your Perfect Getaway</h1>
+            <p>Explore the world with our curated travel experiences. From tropical beaches to mountain adventures, we have the perfect trip for you.</p>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Destination">
+                <input type="date" class="search-input">
+                <input type="date" class="search-input">
+                <select class="search-input">
+                    <option>Travelers</option>
+                    <option>1 Traveler</option>
+                    <option>2 Travelers</option>
+                    <option>3+ Travelers</option>
+                </select>
+                <button class="btn-search" onclick="searchDestinations()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="container">
+        <h2 class="section-title">Popular Destinations</h2>
+        <div class="destinations">
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bali" class="destination-img">
+                <div class="destination-info">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Experience the perfect blend of culture, beaches, and relaxation in the Island of Gods.</p>
+                    <div class="destination-price">
+                        <span class="price">$899</span>
+                        <button class="btn-book" onclick="bookDestination('Bali')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Paris" class="destination-img">
+                <div class="destination-info">
+                    <h3>Paris, France</h3>
+                    <p>Fall in love with the city of lights, art, and exquisite cuisine.</p>
+                    <div class="destination-price">
+                        <span class="price">$1,299</span>
+                        <button class="btn-book" onclick="bookDestination('Paris')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tokyo" class="destination-img">
+                <div class="destination-info">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Discover the perfect mix of traditional culture and cutting-edge technology.</p>
+                    <div class="destination-price">
+                        <span class="price">$1,499</span>
+                        <button class="btn-book" onclick="bookDestination('Tokyo')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container">
+        <h2 class="section-title">Why Choose TravelEase</h2>
+        <div class="services">
+            <div class="service-card">
+                <div class="service-icon">✈️</div>
+                <h3>Best Price Guarantee</h3>
+                <p>We offer the best prices for all our travel packages with no hidden fees.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏨</div>
+                <h3>Luxury Accommodations</h3>
+                <p>Stay at carefully selected hotels that meet our high standards of comfort.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3>Travel Insurance</h3>
+                <p>Comprehensive travel insurance included with every booking for your peace of mind.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📞</div>
+                <h3>24/7 Support</h3>
+                <p>Our travel experts are available round the clock to assist you during your trip.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">What Our Travelers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The trip to Bali was absolutely amazing! Everything was perfectly organized and we had the time of our lives."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Bali Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"TravelEase made our European honeymoon unforgettable. Every detail was taken care of perfectly."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Michael Chen" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Paris Traveler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TravelEase</h3>
+                    <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#" onclick="openSocial('facebook')">FB</a>
+                        <a href="#" onclick="openSocial('twitter')">TW</a>
+                        <a href="#" onclick="openSocial('instagram')">IG</a>
+                        <a href="#" onclick="openSocial('youtube')">YT</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#" onclick="openFAQ()">FAQ</a></li>
+                        <li><a href="#" onclick="openConditions()">Booking Conditions</a></li>
+                        <li><a href="#" onclick="openPrivacy()">Privacy Policy</a></li>
+                        <li><a href="#" onclick="openTerms()">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@travelease.com</li>
+                        <li>📍 123 Travel Street, Adventure City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TravelEase. All rights reserved.</p>
+                <p>Made by Anurag Singh Dodiya</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLogin() {
+            alert('Login form will open here!');
+            // In a real application, you would show a login modal
+        }
+
+        function openSignup() {
+            alert('Sign up form will open here!');
+            // In a real application, you would show a signup modal
+        }
+
+        function searchDestinations() {
+            const destination = document.querySelector('.search-input').value;
+            if (destination) {
+                alert(`Searching for destinations in: ${destination}`);
+            } else {
+                alert('Please enter a destination to search');
+            }
+        }
+
+        function bookDestination(destination) {
+            alert(`Booking ${destination} package! Redirecting to booking page...`);
+            // In a real application, you would redirect to booking page
+        }
+
+        function openSocial(platform) {
+            alert(`Opening our ${platform} page!`);
+            // In a real application, you would redirect to social media
+        }
+
+        function openFAQ() {
+            alert('Opening FAQ page!');
+        }
+
+        function openConditions() {
+            alert('Opening Booking Conditions!');
+        }
+
+        function openPrivacy() {
+            alert('Opening Privacy Policy!');
+        }
+
+        function openTerms() {
+            alert('Opening Terms & Conditions!');
+        }
+    </script>
+</body>
+
+</html>

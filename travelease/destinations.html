@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - TravelEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">Travel<span>Ease</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-login" onclick="openLogin()">Login</button>
+                    <button class="btn btn-signup" onclick="openSignup()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Explore Our Destinations</h1>
+            <p>Discover amazing places around the world with our carefully curated selection of destinations.</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <h2 class="section-title">All Destinations</h2>
+            <div class="destinations">
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bali" class="destination-img">
+                    <div class="destination-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Experience the perfect blend of culture, beaches, and relaxation in the Island of Gods.</p>
+                        <div class="destination-price">
+                            <span class="price">$899</span>
+                            <button class="btn-book" onclick="bookDestination('Bali')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Paris" class="destination-img">
+                    <div class="destination-info">
+                        <h3>Paris, France</h3>
+                        <p>Fall in love with the city of lights, art, and exquisite cuisine.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,299</span>
+                            <button class="btn-book" onclick="bookDestination('Paris')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tokyo" class="destination-img">
+                    <div class="destination-info">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Discover the perfect mix of traditional culture and cutting-edge technology.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,499</span>
+                            <button class="btn-book" onclick="bookDestination('Tokyo')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Santorini" class="destination-img">
+                    <div class="destination-info">
+                        <h3>Santorini, Greece</h3>
+                        <p>Stunning sunsets, white-washed buildings, and crystal-clear waters await you.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,199</span>
+                            <button class="btn-book" onclick="bookDestination('Santorini')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="New York" class="destination-img">
+                    <div class="destination-info">
+                        <h3>New York, USA</h3>
+                        <p>The city that never sleeps - experience Broadway, museums, and iconic landmarks.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,099</span>
+                            <button class="btn-book" onclick="bookDestination('New York')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dubai" class="destination-img">
+                    <div class="destination-info">
+                        <h3>Dubai, UAE</h3>
+                        <p>Luxury shopping, ultramodern architecture, and a lively nightlife scene.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,599</span>
+                            <button class="btn-book" onclick="bookDestination('Dubai')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TravelEase</h3>
+                    <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#" onclick="openSocial('facebook')">FB</a>
+                        <a href="#" onclick="openSocial('twitter')">TW</a>
+                        <a href="#" onclick="openSocial('instagram')">IG</a>
+                        <a href="#" onclick="openSocial('youtube')">YT</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#" onclick="openFAQ()">FAQ</a></li>
+                        <li><a href="#" onclick="openConditions()">Booking Conditions</a></li>
+                        <li><a href="#" onclick="openPrivacy()">Privacy Policy</a></li>
+                        <li><a href="#" onclick="openTerms()">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@travelease.com</li>
+                        <li>📍 123 Travel Street, Adventure City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TravelEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLogin() {
+            alert('Login form will open here!');
+        }
+
+        function openSignup() {
+            alert('Sign up form will open here!');
+        }
+
+        function bookDestination(destination) {
+            alert(`Booking ${destination} package!`);
+        }
+
+        function openSocial(platform) {
+            alert(`Opening our ${platform} page!`);
+        }
+
+        function openFAQ() {
+            alert('Opening FAQ page!');
+        }
+
+        function openConditions() {
+            alert('Opening Booking Conditions!');
+        }
+
+        function openPrivacy() {
+            alert('Opening Privacy Policy!');
+        }
+
+        function openTerms() {
+            alert('Opening Terms & Conditions!');
+        }
+    </script>
+</body>
+</html>

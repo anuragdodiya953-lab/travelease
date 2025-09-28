@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TravelEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">Travel<span>Ease</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-login" onclick="openLogin()">Login</button>
+                    <button class="btn btn-signup" onclick="openSignup()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>About TravelEase</h1>
+            <p>Your trusted partner in creating unforgettable travel experiences since 2010.</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2010, TravelEase began as a small family business with a passion for exploring the world and sharing those experiences with others. What started as a local travel agency has grown into a global company serving thousands of satisfied customers every year.</p>
+                    
+                    <h2>Our Mission</h2>
+                    <p>To make travel accessible, enjoyable, and unforgettable for everyone. We believe that exploring new places and cultures enriches lives and creates lasting memories.</p>
+                    
+                    <h2>Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <h3>🌟 Quality</h3>
+                            <p>We never compromise on the quality of our services and accommodations.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>🤝 Trust</h3>
+                            <p>Building lasting relationships based on trust and reliability.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>🌍 Sustainability</h3>
+                            <p>Promoting responsible tourism that benefits local communities.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>💡 Innovation</h3>
+                            <p>Constantly improving our services to enhance your travel experience.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>50,000+</h3>
+                        <p>Happy Travelers</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>150+</h3>
+                        <p>Destinations</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>13 Years</h3>
+                        <p>of Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>24/7</h3>
+                        <p>Customer Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TravelEase</h3>
+                    <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#" onclick="openSocial('facebook')">FB</a>
+                        <a href="#" onclick="openSocial('twitter')">TW</a>
+                        <a href="#" onclick="openSocial('instagram')">IG</a>
+                        <a href="#" onclick="openSocial('youtube')">YT</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#" onclick="openFAQ()">FAQ</a></li>
+                        <li><a href="#" onclick="openConditions()">Booking Conditions</a></li>
+                        <li><a href="#" onclick="openPrivacy()">Privacy Policy</a></li>
+                        <li><a href="#" onclick="openTerms()">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@travelease.com</li>
+                        <li>📍 123 Travel Street, Adventure City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TravelEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLogin() {
+            alert('Login form will open here!');
+        }
+
+        function openSignup() {
+            alert('Sign up form will open here!');
+        }
+
+        function openSocial(platform) {
+            alert(`Opening our ${platform} page!`);
+        }
+
+        function openFAQ() {
+            alert('Opening FAQ page!');
+        }
+
+        function openConditions() {
+            alert('Opening Booking Conditions!');
+        }
+
+        function openPrivacy() {
+            alert('Opening Privacy Policy!');
+        }
+
+        function openTerms() {
+            alert('Opening Terms & Conditions!');
+        }
+    </script>
+</body>
+</html>
